@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__menu">
+
+      <div class="header-top">
+        <div class="container">
+          <ul class="header-top__switch switch">
+            <li class="switch__item"><a class="switch__link switch__link--active" href="#">для дому</a></li>
+            <li class="switch__item"><a class="switch__link" href="#">для бізнесу</a></li>
+            <li class="switch__item"><a class="switch__link" href="#">для агентів</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+      <div class="header-bottom">
+        <div class="container header__container">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/icons/logo.svg"
+              alt="Сайт Кіровоградської областної енергопостачальної компанії | Головна">
+          </a>
+          <nav class="nav header__nav">
+            <ul class="nav__list nav__list--transform">
+              <li class="nav__item nav__item--mobile"><a href="index.html" class="nav__link">Головна</a></li>
+
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link--drop">Електроенергія</a>
+                <ul class="nav__list nav__list--dropdown dropdown-list">
+                  <li class="dropdown-list__item mobile-back">
+                    <a href="" class="dropdown-list__link mobile-back__link">Назад</a>
+                  </li>
+                  <li class="dropdown-list__item"><a href="contract.html" class="dropdown-list__link">Укласти
+                      договір</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Тарифи</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Оплата</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Передати показники</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">"Зелена" енергія</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Про ринок електроенергії</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link--drop">Газ</a>
+                <ul class="nav__list nav__list--dropdown dropdown-list">
+                  <li class="dropdown-list__item mobile-back">
+                    <a href="" class="dropdown-list__link mobile-back__link">Назад</a>
+                  </li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Споживачам</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Нормативні документи</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link--drop">Підтримка клієнтів</a>
+                <ul class="nav__list nav__list--dropdown dropdown-list">
+                  <li class="dropdown-list__item mobile-back">
+                    <a href="" class="dropdown-list__link mobile-back__link">Назад</a>
+                  </li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Відновлення
+                      електропостячання</a></li>
+                  <li class="dropdown-list__item"><a href="faq-for-home.html" class="dropdown-list__link">Часті
+                      питання</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Мобільний додаток</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Контакти ЦОС</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Контакти ОСР</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Кол-Центр</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Електробезпека</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Енергоефективність</a></li>
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link--drop">Про компанію</a>
+                <ul class="nav__list nav__list--dropdown dropdown-list">
+                  <li class="dropdown-list__item mobile-back">
+                    <a href="" class="dropdown-list__link mobile-back__link">Назад</a>
+                  </li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Інформація</a></li>
+                  <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Новини</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <button class="burger" aria-label="Открыть меню">
+            <span></span>
+          </button>
+
+          <div class="nav-secondary__button">
+            <a class="nav-secondary__cabinet-link" href="#">Особистий кабінет</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="hero-page" style="background-image: url(images/hero/hero-faq-for-home.jpg);">
+      <div class="hero-page__container">
+        <h1 class="page-title">Часті запитання</h1>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="faq__wrep">
+          <h2 class="faq__title">Часті запитання</h2>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_1">
+            <label class="faq-title" for="faq_1">Як зняти показники багатотарифного лічильника?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_2">
+            <label class="faq-title" for="faq_2">Звідки береться заборгованість, якщо споживач плате за показниками
+              свого лічильника?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum
+                deleniti ut ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_3">
+            <label class="faq-title" for="faq_3">Як зняти показники багатотарифного лічильника?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_4">
+            <label class="faq-title" for="faq_4">Який тариф для користувачів електроопаленням?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_5">
+            <label class="faq-title" for="faq_5">Який тариф для користувачів електроопаленням?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_6">
+            <label class="faq-title" for="faq_6">Що робити, якщо сплатив на інший особовий рахунок?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input class="faq-input" type="checkbox" id="faq_7">
+            <label class="faq-title" for="faq_7">Що робити, якщо раптом зникло світло в оселі?
+            </label>
+            <div class="faq-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
+                ipsa
+                blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
+                reprehenderit!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-form section-grey">
+      <div class="container faq-form__container">
+        <h2 class="faq-form__title">
+          Якщо Ви не знайшли відповідь на своє питання, Ви можете задати його нашому спеціалісту
+        </h2>
+        <div class="faq-form__wrep">
+          <form class="form" action="#">
+
+            <div class="select-wrapper">
+              <label class="form__title" for="select">Номер телефона</label>
+              <select name="select-category" id="select" class="select" style="color:#8a8c8e"
+                onchange="this.style.color='black'">
+                <option value="1">Заметки путешественника</option>
+                <option value="2">Конспекты по учебе</option>
+                <option value="3">Фотоальбом</option>
+                <option value="4">Дневник спортсмена</option>
+              </select>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-top__wrap">
+
+          <div class="footer-top__contacts">
+            <a class="logo-footer" href="#">
+              <img class="logo-footer__img" src="images/icons/logo-footer.svg"
+                alt="Сайт Кіровоградської областної енергопостачальної компанії" </a>
+              <div class="footer-top__adress">Україна, м. Кропивницький, вул. Велика Перспективна, 78</div>
+              <div class="footer-top__schedule">
+                <h6 class="footer-top__title">Графік роботи</h6>
+                <span class="footer-top__time">пн – чт: з 08:00 до 17:15</span>
+                <span class="footer-top__time">пт: з 08:00 до 16:00</span>
+              </div>
+
+              <div class="footer-top__call">
+                <h6 class="footer-top__title">Колл–центр</h6>
+                <a class="footer-top__phone" href="tel:+0522305300">0522305300</a>
+                <a class="footer-top__phone" href="tel:+0673505544">(067) 350 55 44</a>
+              </div>
+
+              <div class="footer-top__sertificate">Компанія сертифікована за стандартом ISO 9001:2015</div>
+
+          </div>
+          <div class="footer-top__wrap-nav">
+            <div class="footer-top__nav">
+              <div class="footer-top__items">
+                <h6 class="footer-top__title footer-top__title--nav">компанія</h6>
+                <ul class="footer-top__list">
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Головна</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Енергоефективність</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Про компанію</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Новини</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Контакти</a></li>
+                </ul>
+              </div>
+              <div class="footer-top__items">
+                <h6 class="footer-top__title footer-top__title--nav">електроенергия</h6>
+                <ul class="footer-top__list">
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Укласти договір</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Тарифи</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Оплата</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Передати показники</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">"Зелена" енергія</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Про ринок електроенергії</a></li>
+                </ul>
+              </div>
+              <div class="footer-top__items">
+                <h6 class="footer-top__title footer-top__title--nav">газ</h6>
+                <ul class="footer-top__list">
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Споживачам</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Нормативні документи</a></li>
+                </ul>
+              </div>
+              <div class="footer-top__items">
+                <h6 class="footer-top__title footer-top__title--nav">підтримка клієнтів</h6>
+                <ul class="footer-top__list">
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Часті питання</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Особистий кабінет</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Мобільний додаток</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Адреси ЦОС</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Кол-Центр</a></li>
+                  <li class="footer-top__item"><a class="foter-top__link" href="#">Електробезпека</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <a class="footer-top__business-link" href="#">Перейти на сторінку для бізнесу</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bootom">
+        <p>©<span id="current-year">2022</span> ТОВ "КОЕК" | Всi права захищени</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

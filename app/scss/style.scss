@@ -1,0 +1,126 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+@import "header";
+@import "hero";
+@import "hero-page";
+@import "list-nomber";
+@import "public";
+@import "dg-services";
+@import "simple-list";
+@import "info-gray";
+@import "accordion";
+@import "small-download";
+
+
+/*/* home page *******/
+/*** hero section ***/
+
+
+/*** meet-needs section***/
+
+
+/*** dg-services section ***/
+
+
+/*/* faq-for-home page ***/
+/*** herо-раge section ***/
+
+
+/*** sextion faq ***/
+
+/*** faq-form section ***/
+.faq-form {
+  &__container {
+    max-width: 950px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__wrep {
+    background-color: $bg;
+    border-radius: 5px;
+    padding: 40px;
+  }
+}
+
+.form__title {
+  display: block;
+}
+
+.select {
+  /* Растягиваем блок на 100% родительского блока, для правильного размещения кастомной стрелочки */
+  width: 100%;
+  /* Убираем браузерную стрелку */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  /* Задаем свой фон и рамку */
+  border: 1px solid $form;
+  border-radius: 5px;
+  background-color: $bg;
+  /* Отступы от рамки к тексту */
+  padding: 10px 35px 10px 15px;
+  /* Убираем баузерную обводку*/
+  outline: none;
+  cursor: pointer;
+}
+
+/* Убираем стрелочку в IE 10 и 11 */
+.select::-ms-expand {
+  display: none;
+}
+
+/* По клику - убираем обводку и добавляем свою*/
+.select:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px $form, 0px 0px 2px $form;
+  //outline: 1px solid $accent;
+}
+
+/* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
+.select-wrapper {
+  position: relative;
+}
+
+/* Рисуем стрелочку */
+.select-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: block;
+  /* Рисуем треугольник */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10.4px 6px 0 6px;
+  border-color: $form transparent transparent transparent;
+  /* Снимаем клик с треугольника */
+  pointer-events: none;
+}
+
+/*/* Contract page **/
+/*** Contract section ***/
+.contract {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/*** Download section ***/
+
+
+
+
+
+
+
+
+
+@import "footer";
+@import "media";

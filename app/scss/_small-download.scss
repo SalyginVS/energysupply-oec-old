@@ -1,0 +1,19 @@
+.small-download{
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__container{
+    max-width: 704px;
+    width: 100%;
+    background-color: $bg_grey;
+    border-radius: 8px;
+    padding: 40px;
+  }
+  &__item{
+    background: url(../images/icons/list-bullet/green-arrow-marker.svg) no-repeat left 6px;
+    padding: 0 0 0 1.75rem;
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+}

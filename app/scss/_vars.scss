@@ -1,0 +1,43 @@
+$accent: #48ac32;
+$default: #202120;
+$bg: #ffffff;
+$bg_grey: #f4f6f7;
+$bg_footer: #161a1d;
+$default_grey: #8a8c8e;
+$default_decor: #4d4f4d;
+$form: #e0e0e0;
+$bg-title: rgba(72, 172, 50, 0.9);
+
+%montserrat-400{
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%montserrat-500{
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-600{
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%btn {
+  padding: 12px 20px;
+  color: $bg;
+  border-radius: 25px;
+  background-color: $accent;
+  cursor: pointer;
+  @extend %montserrat-500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%page-h1{
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  margin: 0;
+  text-align: left;
+}
